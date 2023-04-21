@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        border: 2px solid darkblue;
+        border-collapse: collapse;
+    }
+    td{
+        border: 1px solid black;
+        width: 100px;
+        padding: 8px;
+    }
+
+    .especial{
+        background-color: rgba(0, 102, 255, 0.788);
+    }
+
+    .diferente{
+        background-color: rgba(255, 0, 0, 0.747);
+    }
+</style>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (SIMPLES)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado da tabela
+    -->
+    <table>
+        <tr> <!-- Primeira linha-->
+            <td class="diferente">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="especial">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="diferente">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="especial">
+            <td>A4</td>
+            <td>B4</td>
+            <td class="diferente">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
